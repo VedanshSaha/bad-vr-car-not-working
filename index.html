@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="car.js"></script>
+</head>
+<body>
+    <a-scene background = "color : #389cfa">
+        <a-assets>
+            <asset-item src="/Assets/car/badcar.glb" id="car-model"></asset-item>
+        </a-assets>
+        <a-entity gltf-model = "#car-model" scale = "0.1 0.1 0.1" positon = "0 0 0" rotation = "0 0 0" car = "radius:150; height : 3; clickCounter : 1;"></a-entity>
+        <!-- <a-entity car gltf-model="#car-model" scale = "0.1 0.1 0.1"></a-entity> -->
+    </a-scene>
+</body>
+</html>
